@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: auto;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: 540px;
+    width: 600px;
+}
+
+.content div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.content div .image{
+    background: #efefef;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 10px #ffffff;
+}
+
+.content div .image img{
+    height: 60px;
+    transition: transform 0.3s;
+}
+.content div .image img:hover{
+    transform: scale(1.05);
+}
+.content div .bar{
+    height: 80px;
+    width: 450px;
+    background: #efefef;
+    border-radius: 40px;
+    position: relative;
+    margin-left: 20px;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px #ffeeee;
+}
+
+.content div .progress{
+    height: 80px;
+    border-radius: 40px;
+    background: linear-gradient(to right, var(--clr1), var(--clr2));
+}
+
+.content div .bar h1{
+    position: absolute;
+    right: 10px;
+    color: var(--clr1);
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.content div .bar h2{
+    position: absolute;
+    left: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+} 
+    </style>
+     <center> <a href="details.html">  <img src="images/logos/logo.png" style="width: 250px; height: 180px;" alt="image"></a> 
+       <h2>PassOuts</h2></center>
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="container">
+        <div class="content">
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #800080; --clr2: #C71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>AndhraPradesh</h2>
+                    <h1>55%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #32cd32; --clr2: #7cf502;">
+                    <span class="progress" id="70"></span>
+                    <h2>HimachalPradesh</h2>
+                    <h1>70%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #30bdb8; --clr2: #40e0d0;">
+                    <span class="progress" id="45"></span>
+                    <h2>ArunachalPradesh</h2>
+                    <h1>45%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #ff8000; --clr2: #ffff00;">
+                    <span class="progress" id="80"></span>
+                    <h2>Sikkim</h2>
+                    <h1>80%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #00ff51; --clr2: #7bff00;">
+                    <span class="progress" id="79"></span>
+                    <h2>Kerala</h2>
+                    <h1>79%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #ff00b7; --clr2: #ff006f;">
+                    <span class="progress" id="81"></span>
+                    <h2>Maharatra</h2>
+                    <h1>81%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #800080; --clr2: #ae0d53;">
+                    <span class="progress" id="83"></span>
+                    <h2>Tamilnadu</h2>
+                    <h1>83%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #055967; --clr2: #1b81bc;">
+                    <span class="progress" id="69"></span>
+                    <h2>Goa</h2>
+                    <h1>69%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #887e0c; --clr2: #bdd122;">
+                    <span class="progress" id="70"></span>
+                    <h2>Karnataka</h2>
+                    <h1>70%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c8816; --clr2: #22d853;">
+                    <span class="progress" id="73"></span>
+                    <h2>MadyaPradesh</h2>
+                    <h1>73%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #880c77; --clr2: #d822b4;">
+                    <span class="progress" id="73"></span>
+                    <h2>Punjab</h2>
+                    <h1>73%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #440c88; --clr2: #223ad8;">
+                    <span class="progress" id="93"></span>
+                    <h2>Gujarat</h2>
+                    <h1>93%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c4888; --clr2: #4545a6;">
+                    <span class="progress" id="95"></span>
+                    <h2>Jammu&Kashmir</h2>
+                    <h1>95%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c8816; --clr2: #22d853;">
+                    <span class="progress" id="85"></span>
+                    <h2>Uttarachaal</h2>
+                    <h1>85%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c6588; --clr2: #22d8d2;">
+                    <span class="progress" id="89"></span>
+                    <h2>Chattisgarh</h2>
+                    <h1>89%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #79880c; --clr2: #a0d041;">
+                    <span class="progress" id="69"></span>
+                    <h2>Orissa</h2>
+                    <h1>69%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c5688; --clr2: #3382d6;">
+                    <span class="progress" id="86"></span>
+                    <h2>Jharkhand</h2>
+                    <h1>86%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #991a2d; --clr2: #ba353c;">
+                    <span class="progress" id="80"></span>
+                    <h2>Bihar</h2>
+                    <h1>80%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #420c88; --clr2: #5540cd;">
+                    <span class="progress" id="82"></span>
+                    <h2>WestBengal</h2>
+                    <h1>82%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c6188; --clr2: #22a4d8;">
+                    <span class="progress" id="90"></span>
+                    <h2>Tripura</h2>
+                    <h1>90%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #880c7c; --clr2: #d822bd;">
+                    <span class="progress" id="77"></span>
+                    <h2>Mizoram</h2>
+                    <h1>77%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c8816; --clr2: #22d853;">
+                    <span class="progress" id="90"></span>
+                    <h2>Manipur</h2>
+                    <h1>90%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #88400c; --clr2: #d76b38;">
+                    <span class="progress" id="91"></span>
+                    <h2>Assam</h2>
+                    <h1>91%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c8816; --clr2: #22d853;">
+                    <span class="progress" id="73"></span>
+                    <h2>MadyaPradesh</h2>
+                    <h1>73%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #820c88; --clr2: #c531df;">
+                    <span class="progress" id="96"></span>
+                    <h2>Nagaland</h2>
+                    <h1>96%</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #0c3588; --clr2: #5522d8;">
+                    <span class="progress" id="91"></span>
+                    <h2>Meghalaya</h2>
+                    <h1>91%</h1>
+                </div>
+            </div>
+            
+                <div>
+                <div class="image">
+                    <img src="https://www.pngkey.com/png/full/126-1268354_community-student-icon-graduate-icon.png">
+                </div>
+                <div class="bar" style ="--clr1: #dc143c; --clr2: #ff69b4;">
+                    <span class="progress" id="60"></span>
+                    <h2>Rajasthan</h2>
+                    <h1>60%</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+const bars =  document.querySelectorAll('.progress');
+bars.forEach(item =>{
+    let value = item.id;
+    let contador = 0;
+    let interval = setInterval(function(){
+        item.style.width = contador + "%";
+        if (contador == value){
+            clearInterval(interval);
+        }
+        contador++;
+    },8);
+})
+        </script>
+    
+</body>
+</html>
